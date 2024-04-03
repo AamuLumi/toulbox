@@ -1,0 +1,24 @@
+{
+  "name": "toulbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bree": "^9.2.2",
+    "dayjs": "^1.11.10",
+    "discord-api-types": "^0.37.78",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "node-schedule": "^2.1.1",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node-schedule": "^2.1.6",
+    "prettier": "^3.2.5"
+  }
+}
