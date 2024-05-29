@@ -9,8 +9,6 @@ const Queue = {
 			(p, event) => p.then(() => Queue.addGuildScheduledEvent(event)),
 			Promise.resolve(),
 		);
-
-		console.log(jobs);
 	},
 
 	addGuildScheduledEvent: async (event: GuildScheduledEvent) => {
@@ -32,6 +30,7 @@ const Queue = {
 
 	deleteGuildScheduledEvent: async (event: GuildScheduledEvent) => {
 		if (jobs[event.id]) {
+			Scheduler.cancelJob(jobs[event.id]);
 			delete jobs[event.id];
 		}
 	},
